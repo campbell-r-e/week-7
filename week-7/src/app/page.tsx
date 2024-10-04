@@ -1,8 +1,11 @@
-use Server
-import { Server } from 'http'
-import Link from './src/appetizers'
+
+
+import Link from 'next/link';
+import React from 'react';
+
 export default function Home() {
   return (
-    <Link href="/dashboard">Dashboard</Link>
+    <><Link href="/appetizers">appetizers</Link>
+    <Link href="/entrees">Entrees</Link></>
   )
 }
