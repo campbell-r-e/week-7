@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+#link1{
+ 
+  color: aqua;
+  font-size: xx-large;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+#link2{
+  color: red;
+  font-size: xx-large;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  background-color: purple;
 }
+#home{
+  color: blue;
+}
+#textdoc{
+  color: red;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+}
+#data{
+  color: brown;
 }

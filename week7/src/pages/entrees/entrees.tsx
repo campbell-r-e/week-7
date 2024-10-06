@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Layout from '../layout';
 
-import Link from "next/link";
 export default function Document() {
   // modified from example slides to make work
   const [entreesText, setText] = useState("");
   useEffect(() => {
     const textData = async () => {
-      const result = await fetch("entrees.txt");
+      const result = await fetch("/entrees.txt");
       const text = await result.text();
       setText(text);
     };
@@ -17,11 +17,11 @@ export default function Document() {
   return (
    
 
-  <div> 
-    <Link href="/">index</Link>
-    <p>{entreesText}</p>
+  <Layout> 
     
-  </div>
+    <p id="textdoc">{entreesText}</p>
+    
+  </Layout>
  
   );
 }
